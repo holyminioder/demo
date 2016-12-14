@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="100dp"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/bg_slidingmenu_left">
+
+    <LinearLayout
+        android:id="@+id/ll_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_unlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/biz_pc_main_info_profile_avatar_bg_dark"/>
+
+        <TextView
+            android:id="@+id/tv_unlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立刻登录"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/iv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/biz_pc_main_info_profile_avatar_bg_dark"/>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立刻登录"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_update_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更新版本"
+        android:textSize="18sp"
+        android:layout_marginTop="200dp"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@mipmap/share_little_bg">
+
+        <ImageView
+            android:id="@+id/iv_share_weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/fun_share_weixin"/>
+
+        <ImageView
+            android:id="@+id/iv_share_QQ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/addimport_qq"/>
+
+        <ImageView
+            android:id="@+id/iv_share_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/fun_share_friends"/>
+
+        <ImageView
+            android:id="@+id/iv_share_weibo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/fun_share_weibo"/>
+
+    </LinearLayout>
+
+</LinearLayout>

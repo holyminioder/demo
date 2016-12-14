@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <EditText
+    android:id="@+id/et_nikename"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入用户昵称"
+    android:ems="10">
+
+    <requestFocus/>
+
+</EditText>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码：6到16位字符"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注册"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_selector"
+            />
+
+        <Button
+            android:id="@+id/btn_forgot_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="忘记密码"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_selector"
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="登录"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_selector"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
